@@ -1,1 +1,11 @@
-<html><head></head><body style="overflow-wrap: break-word; -webkit-nbsp-mode: space; line-break: after-white-space;"><div>export default {</div><div>&nbsp; transformTreeViews({ treeViews, userContext }) {</div><div>&nbsp; &nbsp; return treeViews</div><div>&nbsp; &nbsp; &nbsp; .filter((treeView) =&gt; {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; // Filtering logic based on current user context ...</div><div>&nbsp; &nbsp; &nbsp; })</div><div>&nbsp; &nbsp; &nbsp; .map((treeView) =&gt; {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; // Transforming logic based on current user context ...</div><div>&nbsp; &nbsp; &nbsp; })</div><div>&nbsp; },</div><div>}</div></body></html>
+export default {
+  transformTreeViews({ treeViews, userContext }) {
+	return treeViews
+	  .filter((_treeView) => {
+		// Filtering logic based on current user context ...
+	  })
+	  .map((_treeView) => {
+		// Transforming logic based on current user context ...
+	  });
+  },
+};
